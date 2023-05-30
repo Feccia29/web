@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Антивирусные программы</title>	
+   <meta name="description" content="Сайт об антивирусных программах">  <!--Использование тега meta-->
+   <meta http-equiv="content-type" content="text/html; charset=utf-8">
+   <meta name="copyright" lang="ru" content="Darya Mezhuretskaya" />
+   <meta name="keywords" content="Антивирус, антивирусные программы, вирусы, шпионы">	
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/index.css">
+   <link rel="stylesheet" href="css/form.css">
+   <script src="css/form.js"></script>
+   <style>
+      h1 {
+        width: 100%;
+        font-family: cursive; 
+        color: #800080; 
+      }
+    </style>  
+</head>
+<body>
+<h1>Антивирусные программы</h1>
+<div class="log" align="center">
+   <img src="img/label.png" width="150" alt="Логотип" class="label" >
+</div>
+<h2>Анкетирование клиентов</h2>
+<hr size="3">
+<!--Меню с гиперссылками-->
+<h3>Меню:</h3>
+  <ul>
+        <li><a href="index.html" title="Главная информация об антивирусных программах">Информация об антивирусах</a></li>
+        <li><a href="page2.html" title="Методы защиты от вирусов и лжеантивирусы">Методы защиты от вирусов</a></li>
+        <li><a href="sources.html" title="Использованные источники информации">Использованные источники</a></li>
+        <li><a href="hard_js3.html" title="Основы JavaScript">Основы JavaScript</a></li>
+        <li><a href="form.htm">Анкета</a></li>
+        <li><a href="#">Таблицы из БД</a></li>
+        <li><a href="#">Таблицы из xml</a></li>
+    </ul>
+<hr size="3">
+
+<section class="intro">
+    <div class="container">
+        <form method="POST" action="cgi-bin/form.py" class="form_style d-flex flex-column" enctype="multipart/form-data" oninput="validateForm()">
+            <h1>Анкета пользователя</h1>
+            <input type="hidden" value="asd">
+            <p>Фамилия:<input type="text" name="Фамилия" placeholder="Введите фамилию" class="required" onchange="enableSubmit()"></p>
+            <p>Имя:<input type="text" name="Имя" placeholder="Введите имя" class="required" onchange="enableSubmit()"></p>       
+            <p>Отчество:<input type="text" name="Отчество" placeholder="Введите отчество" class="required" onchange="enableSubmit()"></p>
+
+
+            <div class="d-flex flex-row align-items-center">
+                <h2>Какой операционной системой Вы пользуетесь?:</h2>
+                <input type=radio name="Операционная система" value="Windows" class="ml-3"> Windows
+                <input type=radio name="Операционная система" value="macOS" class="ml-3"> macOS
+                <input type=radio name="Операционная система" value="Android" class="ml-3"> Android
+                <input type=radio name="Операционная система" value="IOS" class="ml-3"> IOS
+            </div>
+
+            <div class="d-flex flex-row align-items-center">
+                <h2>Какие типы устройств Вы используете?</h2>
+                <input type=checkbox name="Устройство" value="Ноутбук" class="required"> Ноутбук
+                <input type=checkbox name="Устройство" value="Смартфон" class="required"> Смартфон
+                <input type=checkbox name="Устройство" value="Планшет" class="required"> Планшет
+                <input type=checkbox name="Устройство" value="Персональный компьютер" class="required"> Персональный компьютер
+            </div>
+
+            <div align=center> 
+                <h2>Какая Ваша основная потребность в безопасности?</h2>
+                <select name="Потребность">
+                    <option>Личные данные
+                    <option>Данные компании
+                    <option>Банковские данные
+                    <option>Другое
+                </select></div>
+
+            <div class="d-flex flex-row align-items-center">
+                <h2>Можете прикрепить изображение</h2>
+                <input name="image" type="file">
+            </div>
+            <input  id="send" type="submit" value="ОТПРАВИТЬ">           
+        </form>
+    </div>
+</section>
+
+<hr size="3">
+	<div align="center" class="footer" onclick="set_window_text()">
+      <p style="font-size: 100%; font-family: fantasy; color: #000000 ">2023 &copy; 4031 Межурецкая Дарья. Все права защищены.</p>
+	</div>
+</body>
+</html>
+
+</body>
+</html>
+
