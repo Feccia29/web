@@ -1,0 +1,62 @@
+ .war {
+    width: 150px;
+    height: 120px;  
+    margin-top: 4px;
+ }
+
+ .virus {
+    width: 300px;
+    border-radius: 2mm;
+ }
+
+.tab {
+ border: 4px solid #530a5e;
+    text-align: center;
+border-collapse: collapse; 
+}
+
+
+caption {
+   font-size: 24px;
+   text-decoration: underline #49464a;
+}
+
+caption::first-letter {
+   font-size: 36px; 
+   color: rgb(73, 3, 84);
+   font-weight: 800;
+}
+
+#anti 
+{
+color:#49464a;
+font-family:verdana;
+font-size: 20px;
+}
+
+.table-scroll-body {
+    height: 140px;
+    overflow-x: auto;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #530a5e;
+}
+.table-scroll table {
+    width:100%;
+    table-layout: fixed;
+    border: none;
+border-collapse: collapse; 
+}
+.table-scroll thead th {
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 20px;
+    border: 4px solid #530a5e;
+}
+.table-scroll tbody td {
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 18px;
+    vertical-align: top;
+}
+
+  

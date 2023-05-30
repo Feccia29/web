@@ -1,0 +1,40 @@
+ .block {
+    width: 320px;
+    height: 200px;  
+    border-radius: 60px 20px; 
+ }
+
+ .error {
+    height: 200px;  
+    border-radius: 20px; 
+ }
+
+.topmenu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.topmenu > li {
+  width: 25%;
+  float: left;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.submenu {
+  background: slateblue;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  width: 180px;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+  transition: .5s ease-in-out;
+}
+
+.topmenu > li:hover .submenu {
+  opacity: 1;
+  transform: scaleY(1);
+}
