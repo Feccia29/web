@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>Основы JavaScript</title>
+  <meta name="description" content="Основы JavaScript">  <!--Использование тега meta-->
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Основы JavaScript">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="css/show.js"></script>
+  <script src="css/clock.js"></script>
+  <style>
+    h1 {
+      width: 100%;
+      font-family: cursive; 
+      color: #800080; 
+    }
+  </style>
+</head>
+
+ <body>
+
+     <!--ШАПКА САЙТА-->
+     <h1>Антивирусные программы</h1>
+     <div class="log" align="center">
+      <img src="img/label.png" width="150" alt="Логотип" class="label" >
+   </div>
+<h2>Основы JavaScript</h2>
+<hr size="3">
+<!--Меню с гиперссылками-->
+<h3>Меню:</h3>
+  <ul>
+        <li><a href="index.html" title="Главная информация об антивирусных программах">Информация об антивирусах</a></li>
+        <li><a href="page2.html" title="Методы защиты от вирусов и лжеантивирусы">Методы защиты от вирусов</a></li>
+        <li><a href="sources.html" title="Использованные источники информации">Использованные источники</a></li>
+        <li><a href="hard_js3.html" title="Основы JavaScript">Основы JavaScript</a></li>
+        <li><a href="form.htm">Анкета</a></li>
+        <li><a href="#">Таблицы из БД</a></li>
+        <li><a href="#">Таблицы из xml</a></li>
+    </ul>
+<hr size="3">
+<h3>Редактор JavaScript: </h3>
+<script>
+  function clear_holst()
+{ var canvas = document.getElementById("drawingCanvas");
+var context = canvas.getContext("2d");
+context.clearRect(0,0,600,200);  }
+</script>  </head>
+<table border =0> 
+<tr> <td> Введите  текст программы на javascript:</td>
+
+<td>Отображение рисунка: </td></tr>
+<tr><td><textarea id="mycode" rows=20 cols=100></textarea></td> 
+<td> <canvas id="drawingCanvas" width="400" height="300">Ваш браузер не поддерживает canvas </canvas></td>
+</tr></table>
+<br> <br>
+<button onclick= "eval(document.getElementById('mycode').value)">
+Отобразить рисунок  </button>
+<button id="myButton" onclick="openModal()">Информация</button>
+  <div id="myModal" class="modal"> 
+    <div align="center" class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <p>Автор сайта: группа 4031 Межурецкая Дарья Алексеевна</p>
+    </div>
+  </div>
+  <button id="time" >Время</button>    
+<hr size="3">
+	<div align="center">
+    <p style="font-size: 100%; font-family: fantasy; color: #000000 ">2023 &copy; 4031 Межурецкая Дарья. Все права защищены.</p>
+	</div>
+
+</body></html>
