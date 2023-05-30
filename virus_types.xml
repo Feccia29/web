@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<catalog>
+   <type>
+     <name>Norton</name>
+     <company>Symantec</company>
+     <version>2023</version>
+     <atack>средний</atack>
+     <manyimgs>img/norton.png</manyimgs>          
+   </type>
+    <type>
+     <name>Avast</name>
+     <company>Avast Software</company>
+     <version>2022</version>
+     <atack>высокий</atack>
+     <manyimgs>img/avast.png</manyimgs>          
+   </type>
+   <type>
+     <name>Kaspersky</name>
+     <company>Kaspersky Lab</company>
+     <version>2023</version>
+     <atack>низкий</atack>
+     <manyimgs>img/kasp.png</manyimgs>          
+   </type>
+   <type>
+     <name>McAfee</name>
+     <company>McAfee</company>
+     <version>2023</version>
+     <atack>средний</atack>
+     <manyimgs>img/afee.png</manyimgs>           
+   </type>
+   <type>
+     <name>Bitdefender</name>
+     <company>Bitdefender</company>
+     <version>2022</version>
+     <atack>высокий</atack>
+     <manyimgs>img/bitd.png</manyimgs>           
+   </type>
+   <type>
+     <name>AVG</name>
+     <company>AVG</company>
+     <version>2023</version>
+     <atack>средний</atack>
+     <manyimgs>img/avg.png</manyimgs>           
+   </type>
+   <type>
+     <name>Windows Defender</name>
+     <company>Windows</company>
+     <version>2022</version>
+     <atack>низкий</atack>
+     <manyimgs>img/win.png</manyimgs>           
+   </type>
+   <type>
+     <name>Trend Micro</name>
+     <company>Trend Micro</company>
+     <version>2023</version>
+     <atack>высокий</atack>
+     <manyimgs>img/tren.png</manyimgs>           
+   </type>
+   <type>
+     <name>TotalAV</name>
+     <company>TotalAV</company>
+     <version>2022</version>
+     <atack>средний</atack>
+     <manyimgs>img/tot.png</manyimgs>           
+   </type>
+   <type>
+     <name>Avira</name>
+     <company>Avira</company>
+     <version>2023</version>
+     <atack>низкий</atack>
+     <manyimgs>img/avi.png</manyimgs>           
+   </type>
+</catalog>

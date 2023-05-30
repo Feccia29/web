@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<catalog>
+   <type>
+     <name>Название: Norton</name>
+     <company>Компания: Symantec</company>
+     <version>Версия: 2023</version>
+     <atack>Уровень угрозы: средний</atack>
+     <manyimgs>img/norton.png</manyimgs>          
+   </type>
+    <type>
+     <name>Название: Avast</name>
+     <company>Компания: Avast Software</company>
+     <version>Версия: 2022</version>
+     <atack>Уровень угрозы: высокий</atack>
+     <manyimgs>img/avast.png</manyimgs>          
+   </type>
+   <type>
+     <name>Название: Kaspersky</name>
+     <company>Компания: Kaspersky Lab</company>
+     <version>Версия: 2023</version>
+     <atack>Уровень угрозы: низкий</atack>
+     <manyimgs>img/kasp.png</manyimgs>         
+   </type>
+   <type>
+     <name>Название: McAfee</name>
+     <company>Компания: McAfee</company>
+     <version>Версия: 2023</version>
+     <atack>Уровень угрозы: средний</atack>
+     <manyimgs>img/afee.png</manyimgs>          
+   </type>
+
+   <type>
+     <name>Название: Bitdefender</name>
+     <company>Компания: Bitdefender</company>
+     <version>Версия: 2022</version>
+     <atack>Уровень угрозы: высокий</atack>
+     <manyimgs>img/bitd.png</manyimgs>          
+   </type>
+   <type>
+     <name>Название: AVG</name>
+     <company>Компания: AVG</company>
+     <version>Версия: 2023</version>
+     <atack>Уровень угрозы: средний</atack>
+     <manyimgs>img/avg.png</manyimgs>          
+   </type>
+   <type>
+     <name>Название: Windows Defender</name>
+     <company>Компания: Windows</company>
+     <version>Версия: 2022</version>
+     <atack>Уровень угрозы: низкий</atack>
+     <manyimgs>img/win.png</manyimgs>          
+   </type>
+   <type>
+     <name>Название: Trend Micro</name>
+     <company>Компания: Trend Micro</company>
+     <version>Версия: 2023</version>
+     <atack>Уровень угрозы: высокий</atack>
+     <manyimgs>img/tren.png</manyimgs>          
+   </type>
+   <type>
+     <name>Название: TotalAV</name>
+     <company>Компания: TotalAV</company>
+     <version>Версия: 2022</version>
+     <atack>Уровень угрозы: средний</atack>
+     <manyimgs>img/tot.png</manyimgs>          
+   </type>
+   <type>
+     <name>Название: Avira</name>
+     <company>Компания: Avira</company>
+     <version>Версия: 2023</version>
+     <atack>Уровень угрозы: низкий</atack>
+     <manyimgs>img/avi.png</manyimgs>          
+   </type>
+</catalog>

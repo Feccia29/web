@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Антивирусные программы</title>	
+   <meta name="description" content="Сайт об антивирусных программах">  <!--Использование тега meta-->
+   <meta http-equiv="content-type" content="text/html; charset=utf-8">
+   <meta name="copyright" lang="ru" content="Darya Mezhuretskaya" />
+   <meta name="keywords" content="Антивирус, антивирусные программы, вирусы, шпионы">	
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/index.css">
+   <style>
+      h1 {
+        width: 100%;
+        font-family: cursive; 
+        color: #800080; 
+      }
+    </style>  
+    <script>
+      function loadXMLDoc(filename) {
+         if (window.ActiveXObject) {
+            xhttp = new ActiveXObject("Msxml2.XMLHTTP");         }
+         else {           xhttp = new XMLHttpRequest();        }
+          xhttp.open("GET", filename, false);
+          try { xhttp.responseType = "msxml-document" } catch(err) {} // Helping IE11
+          xhttp.send("");
+          return xhttp.responseXML;   }
+   
+      function displayResult() {
+    
+         xml = loadXMLDoc("virus_types.xml");
+         xsl = loadXMLDoc("virus.xsl");
+         xml2 = loadXMLDoc("virus_types_str.xml");
+         xsl2 = loadXMLDoc("virus_str.xsl");
+         // код для IE
+         if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
+            ex = xml.transformNode(xsl);
+            document.getElementById("example").innerHTML = ex;        }
+         // код для Chrome, Firefox, Opera и др.
+         else if (document.implementation && document.implementation.createDocument) {
+            xsltProcessor = new XSLTProcessor();
+            xsltProcessor.importStylesheet(xsl);
+            console.log(xml, xsl);
+            resultDocument = xsltProcessor.transformToFragment(xml, document);
+            //res2 = xsltProcessor.transformToFragment(xml2, document);
+            //console.log(resultDocument);
+           document.getElementById("example").appendChild(resultDocument);
+   
+           xsltProcessor = new XSLTProcessor();
+           xsltProcessor.importStylesheet(xsl2);
+           res2 = xsltProcessor.transformToFragment(xml2, document);
+           document.getElementById("str").appendChild(res2);
+         }     }
+   </script>  
+</head>
+<body>
+<!--Вид таблицы: Объединение строк и столбцов
+    Вид списка: Определений (теги dl, dt, dd)-->
+    <!--ШАПКА САЙТА-->
+<h1>Антивирусные программы</h1>
+<div class="log" align="center">
+   <img src="css/label.png" width="150" alt="Логотип" class="label" >
+</div>
+<h2>Информация об антивирусах</h2>
+<hr size="3">
+<!--Меню с гиперссылками-->
+<h3>Меню:</h3>
+  <ul>
+        <li><a href="index.html" title="Главная информация об антивирусных программах">Информация об антивирусах</a></li>
+        <li><a href="page2.html" title="Методы защиты от вирусов и лжеантивирусы">Методы защиты от вирусов</a></li>
+        <li><a href="sources.html" title="Использованные источники информации">Использованные источники</a></li>
+        <li><a href="hard_js3.html" title="Основы JavaScript">Основы JavaScript</a></li>
+        <li><a href="form.htm">Анкета</a></li>
+        <li><a href="lr6.php">Таблицы из БД</a></li>
+        <li><a href="#">Таблицы из xml</a></li>
+    </ul>
+<hr size="3">
+
+<body onload="displayResult()">  XML в виде таблицы
+   <div id="example"></div>
+   <br>
+   <br>
+   XML построчно
+   <div id="str"></div>
+   <br>
+   <hr size="3">
+      <div align="center" class="footer" onclick="set_window_text()">
+         <p style="font-size: 100%; font-family: fantasy; color: #000000 ">2023 &copy; 4031 Межурецкая Дарья. Все права защищены.</p>
+      </div>
+   </body>
+   </html>
